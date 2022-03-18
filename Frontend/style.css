@@ -1,0 +1,330 @@
+* {
+    font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(49, 49, 63);
+}
+
+body {
+    padding: 1px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(241, 251, 252);
+}
+
+#options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px auto;
+    float:right;
+}
+
+#options button {
+    width: 200px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    color: rgb(138, 138, 226);
+    border: dashed 1px;
+    border-color: rgb(155, 155, 155);
+    border-radius: 10px;
+}
+
+#options button:disabled, #options button:hover {
+    background-color: rgb(85, 63, 94);
+    color: rgb(255, 221, 240);
+    border-color: rgb(255, 221, 240);
+}
+
+.authorCont {
+    margin: 10px 10px 5px 10px;
+    background-color: rgb(190, 185, 201);
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: dashed 1px;
+    border-color: rgb(155, 155, 155);
+}
+
+.authorCont h2 {
+    text-align: center;
+    color: rgb(43, 42, 48);
+}
+
+#showBooks {
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px;
+    border-color: rgb(221, 221, 253);
+    background-color: rgb(199, 128, 189);
+    color: rgb(221, 221, 253);
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+#showBooks:hover {
+    background-color: rgb(255, 221, 240);
+    color: rgb(199, 128, 189);
+    border-color: rgb(199, 128, 189);
+}
+
+#showing {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.leftCont {
+    background-color: rgb(241, 251, 252);
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.bookCont {
+    margin: 10px 10px 5px 10px;
+    background-color: rgb(249, 235, 255);
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border-radius: 20px;
+    border: dashed 1px;
+    border-color: rgb(155, 155, 155);
+}
+
+.bookInfo {
+    padding: 10px 30px 40px 30px;
+    margin: 10px;
+    line-height: 10px;
+    min-width: 140px;
+    display: flex;
+    flex-direction: column;
+}
+
+.bookInfo h2 {
+    font-style:oblique;
+    line-height: 27px;
+    font-size: 30px;
+}
+
+.bookInfo i {
+    color: rgb(138, 138, 226);
+    line-height: 18px;
+    font-size: 15px;
+}
+
+.controls {
+    margin: 10px;
+    padding: 50px 30px;
+    border-left: solid 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-color: rgb(155, 155, 155);
+}
+
+.rightCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: rgb(241, 251, 252);
+    flex: 2;
+    /* align-items: stretch; */
+}
+
+.colCont {
+    margin: 10px auto;
+    background-color: rgb(138, 138, 226);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 20px;
+    border: dashed 1px;
+    border-color: rgb(249, 235, 255);
+    /* max-height: 50%; */
+}
+
+#addNew {
+    padding: 20px 5px;
+    background-color: rgb(85, 63, 94);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#addNew h2 {
+    color:rgb(249, 235, 255);
+    font-size: 30px;
+    padding: 10px;
+    max-width: 200px;
+    line-height: 50px;
+    border: none;
+}
+
+#addNew .btn {
+    background-color: rgb(199, 128, 189);
+    color: rgb(255, 221, 240);
+    margin: 10px auto;
+    border-color:rgb(255, 221, 240);
+    /* justify-content: center; */
+}
+
+#delBtn {
+    background-color: rgb(85, 63, 94);
+    color: rgb(255, 221, 240);
+    border-color:rgb(255, 221, 240);
+}
+
+#delBtn:hover {
+    background-color: rgb(221, 221, 253);
+    color: rgb(85, 63, 94);
+    border-color: rgb(85, 63, 94);
+}
+
+#addNew .btn:hover {
+    border-color:rgb(199, 128, 189);
+    background-color: rgb(138, 138, 226);
+    color:rgb(221, 221, 253);
+}
+
+#addNew form {
+    margin: 100px 0;
+}
+
+#addNew label {
+    text-align: left;
+    font-size: medium;
+    padding-left: 20px;
+    font-size: 15px;
+    padding-top: 10px;
+    color:rgb(255, 221, 240);
+}
+
+.colCont h2{
+    margin: 10px auto;
+    padding-bottom: 10px;
+    line-height: 22px;
+    border-bottom: solid 1px;
+    border-color: rgb(249, 235, 255);
+    max-width: 80%;
+    
+}
+
+.colCont p{
+    color: rgb(249, 235, 255);
+    font-style: normal;
+    max-width: 60%;
+    margin: 10px auto;
+}
+
+.btn{
+    width: 80px;
+    margin: 0 auto;
+    border: solid 1px;
+    border-radius: 10px;
+    text-transform: uppercase;
+}
+
+.controls .btn {
+    border-color: rgb(138, 138, 226);
+    background-color: rgb(190, 185, 201);;
+    color: rgb(248, 248, 255);
+}
+
+.controls .btn:hover {
+    background-color: rgb(221, 221, 253);
+    color:rgb(43, 42, 48);
+}
+
+.colCont .btn {
+    border-color: rgb(199, 128, 189);
+    background-color: rgb(255, 221, 240);
+    color: rgb(199, 128, 189);
+}
+
+.colCont .btn:hover {
+    background-color: rgb(255, 231, 250);
+    color:rgb(71, 67, 71);
+}
+
+label {
+    color: rgb(138, 138, 226);
+    font-size: large;
+    font-weight: bold;
+    line-height: 20px;
+}
+
+select {
+    height: 30px;
+    width:160px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form {
+    padding: 10px;
+    display: flex;
+    flex-direction: column; 
+    max-width: inherit;
+}
+
+form .btn {
+    /* float:right; */
+    margin: auto 0;
+} 
+
+input {
+    border-radius: 10px;
+    padding: 5px;
+    border: solid 1px;
+    border-color: rgb(249, 235, 255);;
+    margin: 10px auto;
+}
+
+li {
+    font-size: 13px;
+    border-bottom: dotted 1px;
+    border-color: rgb(138, 138, 226);
+    font-family: cursive;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+    /* margin: 5px 0px 0px 0px; */
+    text-align: left;
+    line-height: 15px;
+    max-width: 180px;
+}
+
+.colBooks {
+    margin: 15px auto;
+    background-color: aliceblue;
+    border: solid 1px;
+    border-color: rgb(255, 221, 240);
+    border-radius: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    max-height: 100%;
+    cursor:default;
+}
+
+.list {
+    margin: 10px 10px 15px -30px; 
+}
+
+#removeBtn {
+    border-radius: 30px;
+    border: solid 1px;
+    border-color: rgb(255, 231, 250);
+    background-color: rgb(199, 128, 189);
+    margin: 5px 0px 5px 5px;
+}
+
+#removeBtn:hover {
+    background-color: black;
+    color: rgb(199, 128, 189)
+}
